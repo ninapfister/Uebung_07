@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.text.ParseException;
 
 public class Aufgabe2
 {
@@ -14,9 +15,28 @@ public class Aufgabe2
             System.out.println(dividieren);
 
         }
-        catch (Exception ex)
+        catch (ArithmeticException aex)
         {
             System.err.println("Fehler!");
         }
+
+        // Aufgabe 3
+
+
+        catch (NumberFormatException nfex)
+        {
+            nfex.printStackTrace();
+        }
+
+        catch (NullPointerException npex)
+        {
+            npex.printStackTrace();
+        }
+
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+
     }
 }
